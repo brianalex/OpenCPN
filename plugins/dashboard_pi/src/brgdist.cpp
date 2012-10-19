@@ -14,20 +14,6 @@
 #define ONEPI 3.14159265358979323846
 #define MERI_TOL 1e-9
 
-static double th1,costh1,sinth1,sina12,cosa12,M,N,c1,c2,D,P,s1;
-static int merid, signS;
-
-/* Input/Output from geodesic functions */
-static double al12; /* Forward azimuth */
-static double al21; /* Back azimuth */
-static double geod_S; /* Distance */
-static double phi1, lam1, phi2, lam2;
-
-static int ellipse;
-static double geod_f;
-static double geod_a;
-static double es, onef, f, f64, f2, f4;
-
 //----------------------------------------------------------------
 //
 // DashboardInstrument_BrgDistImplementation
