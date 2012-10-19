@@ -25,7 +25,7 @@ public:
     
     void BearingDistanceMercator(double dcurlat, double dcurlon, double dglat, double dglon, double *brg, double *dist);
 private:
-    double th1,costh1,sinth1,sina12,cosa12,M,N,c1,c2,D,P,s1;
+    double th1,D;
     int merid, signS;
 /* Input/Output from geodesic functions */
     double al12; /* Forward azimuth */
