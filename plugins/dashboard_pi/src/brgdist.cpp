@@ -59,8 +59,8 @@ void DashboardInstrument_BrgDist::SetData(int st, double data, wxString unit)
     if (st == OCPN_DBP_STC_PLA) m_curlat = data;
     if (st == OCPN_DBP_STC_PLO) m_curlon = data;
 
-    BrgDistCalc cBD;
-    cBD.BearingDistanceMercator(m_curlat, m_curlon, m_lat, m_lon, &m_brg, &m_dist);
+    BrgDistCalc *cBD;
+    cBD->BearingDistanceMercator(m_curlat, m_curlon, m_lat, m_lon, &m_brg, &m_dist);
     
     m_data1 = toDEGNM(1, m_brg);
     m_data2 = toDEGNM(2, m_dist);
